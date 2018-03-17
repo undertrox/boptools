@@ -1,0 +1,14 @@
+{
+	"parent":"boptools:item/tool/shield",
+	"textures": {
+		"layer0":"boptools:items/tool/tanzanite/shield"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"blocking": 1
+			},
+			"model": "boptools:item/tool/tanzanite/shield/shield_blocking"
+		}
+	]
+}

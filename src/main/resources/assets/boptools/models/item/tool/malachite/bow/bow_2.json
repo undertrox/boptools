@@ -1,0 +1,6 @@
+{
+	"parent": "boptools:item/tool/malachite/bow/bow_initial",
+	"textures": {
+		"layer0": "boptools:items/tool/malachite/bow/bow_2"
+	}
+}	

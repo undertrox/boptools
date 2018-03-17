@@ -1,0 +1,6 @@
+{
+	"parent": "boptools:item/tool/sapphire/bow/bow_initial",
+	"textures": {
+		"layer0": "boptools:items/tool/sapphire/bow/bow_1"
+	}
+}	

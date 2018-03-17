@@ -1,0 +1,14 @@
+{
+	"parent": "item/handheld_rod",
+	"textures": {
+		"layer0": "boptools:items/tool/peridot/fishing_rod/fishing_rod"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"cast": 1.0
+			},
+			"model": "boptools:item/tool/peridot/fishing_rod/fishing_rod_cast"
+		}
+	]
+}

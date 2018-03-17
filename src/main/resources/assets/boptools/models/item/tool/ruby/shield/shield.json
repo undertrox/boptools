@@ -1,0 +1,14 @@
+{
+	"parent":"boptools:item/tool/shield",
+	"textures": {
+		"layer0":"boptools:items/tool/ruby/shield"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"blocking": 1
+			},
+			"model": "boptools:item/tool/ruby/shield/shield_blocking"
+		}
+	]
+}

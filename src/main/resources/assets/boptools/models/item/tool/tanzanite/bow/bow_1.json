@@ -1,0 +1,6 @@
+{
+	"parent": "boptools:item/tool/tanzanite/bow/bow_initial",
+	"textures": {
+		"layer0": "boptools:items/tool/tanzanite/bow/bow_1"
+	}
+}	

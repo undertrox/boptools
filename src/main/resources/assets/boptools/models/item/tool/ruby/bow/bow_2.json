@@ -1,0 +1,6 @@
+{
+	"parent": "boptools:item/tool/ruby/bow/bow_initial",
+	"textures": {
+		"layer0": "boptools:items/tool/ruby/bow/bow_2"
+	}
+}	

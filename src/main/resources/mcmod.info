@@ -1,0 +1,19 @@
+[
+{
+  "modid": "boptools",
+  "name": "Biomes o Plenty Tools Mod",
+  "description": "Adds Tools and Armor for the Biomes o plenty Gems",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["undertrox"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": [
+    "biomesoplenty",
+    "cofhcore"
+  ]
+}
+]

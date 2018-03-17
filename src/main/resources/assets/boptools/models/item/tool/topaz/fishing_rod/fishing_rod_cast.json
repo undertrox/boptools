@@ -1,0 +1,6 @@
+{
+	"parent": "boptools:item/tool/topaz/fishing_rod/fishing_rod",
+	"textures": {
+		"layer0": "boptools:items/tool/topaz/fishing_rod/fishing_rod_cast"
+	}
+}

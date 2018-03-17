@@ -1,0 +1,6 @@
+{
+	"parent": "boptools:item/tool/topaz/bow/bow_initial",
+	"textures": {
+		"layer0": "boptools:items/tool/topaz/bow/bow_2"
+	}
+}	
