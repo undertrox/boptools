@@ -1,5 +1,6 @@
 package de.undertrox.boptools.item;
 
+import de.undertrox.boptools.ModBopTools;
 import de.undertrox.boptools.item.equipment.EquipmentGroup;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -16,7 +17,8 @@ public class ModItems {
             400,
             8.0f,
             2.3f,
-            17
+            17,
+            ModBopTools.CONFIG_TOOLS.topaz
     );
     public static EquipmentGroup toolsMalachite = new EquipmentGroup(
             "malachite",
@@ -25,7 +27,8 @@ public class ModItems {
             600,
             7.0f,
             2.5f,
-            12
+            12,
+            ModBopTools.CONFIG_TOOLS.malachite
     );
     public static EquipmentGroup toolsPeridot = new EquipmentGroup(
             "peridot",
@@ -34,7 +37,8 @@ public class ModItems {
             500,
             6.0f,
             2.0f,
-            13
+            13,
+            ModBopTools.CONFIG_TOOLS.peridot
     );
     public static EquipmentGroup toolsTanzanite = new EquipmentGroup(
             "tanzanite",
@@ -43,7 +47,8 @@ public class ModItems {
             600,
             6.5f,
             2.3f,
-            15
+            15,
+            ModBopTools.CONFIG_TOOLS.tanzanite
     );
     public static EquipmentGroup toolsRuby = new EquipmentGroup(
             "ruby",
@@ -52,7 +57,8 @@ public class ModItems {
             900,
             7.5f,
             2.8f,
-            10
+            10,
+            ModBopTools.CONFIG_TOOLS.ruby
     );
     public static EquipmentGroup toolsSapphire = new EquipmentGroup(
             "sapphire",
@@ -61,7 +67,8 @@ public class ModItems {
             1300,
             7.5f,
             3.0f,
-            10
+            10,
+            ModBopTools.CONFIG_TOOLS.sapphire
     );
     public static EquipmentGroup toolsAmber = new EquipmentGroup(
             "amber",
@@ -70,7 +77,8 @@ public class ModItems {
             250,
             4.5f,
             2f,
-            20
+            20,
+            ModBopTools.CONFIG_TOOLS.amber
     );
 
     public static void register(IForgeRegistry<Item> registry) {

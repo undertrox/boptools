@@ -33,6 +33,8 @@ public class EquipmentGroup {
     public String name;
     public String repairIngot;
 
+    private ModBopTools.CONFIG_TOOLS.EquipmentConfig config;
+
     public ItemAxeCore axe;
     public ItemBowCore bow;
     public ItemHammerCore hammer;
@@ -70,7 +72,8 @@ public class EquipmentGroup {
             int leggingsProtection,
             int bootsProtection,
             SoundEvent soundOnEquip,
-            float armorToughness
+            float armorToughness,
+            ModBopTools.CONFIG_TOOLS.EquipmentConfig config
     ){
         toolMaterial = EnumHelper.addToolMaterial(
                 name.toUpperCase(),
@@ -119,6 +122,8 @@ public class EquipmentGroup {
         fishingRod = new ItemFishingRodCore(toolMaterial)
                 .setLuckModifier(fishingLuck)
                 .setSpeedModifier(fishingSpeed);
+        this.config = config;
+
         setNames();
         setRepairIngots();
     }
@@ -130,7 +135,8 @@ public class EquipmentGroup {
             int maxUses,
             float efficiency,
             float damage,
-            int enchantability
+            int enchantability,
+            ModBopTools.CONFIG_TOOLS.EquipmentConfig config
     ){
             this(
                     name,
@@ -152,7 +158,8 @@ public class EquipmentGroup {
                     harvestLevel+3,
                     harvestLevel,
                     SoundEvents.ITEM_ARMOR_EQUIP_IRON,
-                    harvestLevel
+                    harvestLevel,
+                    config
             );
     }
 
@@ -196,106 +203,136 @@ public class EquipmentGroup {
 
     private void createRecipes() {
         String stick = "stickWood";
-        addShapedOreRecipe(axe, new Object[] {
-                "ii",
-                "is",
-                " s",
-                'i', repairIngot,
-                's', stick
-        });
-        addShapedOreRecipe(bow, new Object[] {
-                " iS",
-                "s S",
-                " iS",
-                'i', repairIngot,
-                's', stick,
-                'S', "string"
-        });
-        addShapedOreRecipe(hammer, new Object[] {
-                "iii",
-                "isi",
-                " s ",
-                'i', repairIngot,
-                's', stick
-        });
-        addShapedOreRecipe(pickaxe, new Object[] {
-                "iii",
-                " s ",
-                " s ",
-                'i', repairIngot,
-                's', stick
-        });
-        addShapedOreRecipe(hoe, new Object[] {
-                "ii",
-                " s",
-                " s",
-                'i', repairIngot,
-                's', stick
-        });
-        addShapedOreRecipe(shears, new Object[] {
-                " i",
-                "i ",
-                'i', repairIngot,
-        });
-        addShapedOreRecipe(shield, new Object[] {
-                "iii",
-                "isi",
-                " i ",
-                'i', repairIngot,
-                's', Items.SHIELD
-        });
-        addShapedOreRecipe(shovel, new Object[] {
-                "i",
-                "s",
-                "s",
-                'i', repairIngot,
-                's', stick
-        });
-        addShapedOreRecipe(sickle, new Object[] {
-                "i ",
-                " i",
-                "si",
-                'i', repairIngot,
-                's', stick
-        });
-        addShapedOreRecipe(sword, new Object[] {
-                "i",
-                "i",
-                "s",
-                'i', repairIngot,
-                's', stick
-        });
-        addShapedOreRecipe(fishingRod, new Object[] {
-                "  i",
-                " iS",
-                "s S",
-                'i', repairIngot,
-                's', stick,
-                'S', "string"
-        });
+        if (config.tools.enableAxe) {
+            addShapedOreRecipe(axe, new Object[]{
+                    "ii",
+                    "is",
+                    " s",
+                    'i', repairIngot,
+                    's', stick
+            });
+        }
+        if (config.tools.enableBow) {
+            addShapedOreRecipe(bow, new Object[]{
+                    " iS",
+                    "s S",
+                    " iS",
+                    'i', repairIngot,
+                    's', stick,
+                    'S', "string"
+            });
+        }
+        if (config.tools.enableHammer) {
+            addShapedOreRecipe(hammer, new Object[]{
+                    "iii",
+                    "isi",
+                    " s ",
+                    'i', repairIngot,
+                    's', stick
+            });
+        }
+        if (config.tools.enablePickaxe) {
+            addShapedOreRecipe(pickaxe, new Object[]{
+                    "iii",
+                    " s ",
+                    " s ",
+                    'i', repairIngot,
+                    's', stick
+            });
+        }
+        if (config.tools.enableHoe) {
+            addShapedOreRecipe(hoe, new Object[]{
+                    "ii",
+                    " s",
+                    " s",
+                    'i', repairIngot,
+                    's', stick
+            });
+        }
+        if (config.tools.enableShears) {
+            addShapedOreRecipe(shears, new Object[]{
+                    " i",
+                    "i ",
+                    'i', repairIngot,
+            });
+        }
+        if (config.tools.enableShield) {
+            addShapedOreRecipe(shield, new Object[]{
+                    "iii",
+                    "isi",
+                    " i ",
+                    'i', repairIngot,
+                    's', Items.SHIELD
+            });
+        }
+        if (config.tools.enableShovel) {
+            addShapedOreRecipe(shovel, new Object[]{
+                    "i",
+                    "s",
+                    "s",
+                    'i', repairIngot,
+                    's', stick
+            });
+        }
+        if (config.tools.enableSickle) {
+            addShapedOreRecipe(sickle, new Object[]{
+                    "i ",
+                    " i",
+                    "si",
+                    'i', repairIngot,
+                    's', stick
+            });
+        }
+        if (config.tools.enableSword) {
+            addShapedOreRecipe(sword, new Object[]{
+                    "i",
+                    "i",
+                    "s",
+                    'i', repairIngot,
+                    's', stick
+            });
+        }
+        if (config.tools.enableFishingRod) {
+            addShapedOreRecipe(fishingRod, new Object[]{
+                    "  i",
+                    " iS",
+                    "s S",
+                    'i', repairIngot,
+                    's', stick,
+                    'S', "string"
+            });
+        }
 
-        addShapedOreRecipe(helmet, new Object[] {
-                "iii",
-                "i i",
-                'i', repairIngot,
-        });
-        addShapedOreRecipe(chestplate, new Object[] {
-                "i i",
-                "iii",
-                "iii",
-                'i', repairIngot,
-        });
-        addShapedOreRecipe(leggings, new Object[] {
-                "iii",
-                "i i",
-                "i i",
-                'i', repairIngot,
-        });
-        addShapedOreRecipe(boots, new Object[] {
-                "i i",
-                "i i",
-                'i', repairIngot,
-        });
+        if (config.armor.enableHelmet) {
+            addShapedOreRecipe(helmet, new Object[]{
+                    "iii",
+                    "i i",
+                    'i', repairIngot,
+            });
+        }
+        if (config.armor.enableChestplate) {
+            addShapedOreRecipe(chestplate, new Object[]{
+                    "i i",
+                    "iii",
+                    "iii",
+                    'i', repairIngot,
+            });
+        }
+        if (config.armor.enableLeggings) {
+            addShapedOreRecipe(leggings, new Object[]{
+                    "iii",
+                    "i i",
+                    "i i",
+                    'i', repairIngot,
+            });
+        }
+        if (config.armor.enableBoots) {
+            addShapedOreRecipe(boots, new Object[]{
+                    "i i",
+                    "i i",
+                    'i', repairIngot,
+            });
+        }
     }
 
     public ResourceLocation getNameForRecipe(ItemStack output) {

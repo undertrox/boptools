@@ -109,3 +109,6 @@ item.boptools.tool.shieldamber.name=Amber Shield
 item.boptools.tool.shovelamber.name=Amber Shovel
 item.boptools.tool.sickleamber.name=Amber Sickle
 item.boptools.tool.swordamber.name=Amber Sword
+
+boptools.config.gems.amber.name = Amber
+boptools.config.gems.amber.tools.name = Tools

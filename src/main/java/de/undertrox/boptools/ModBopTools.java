@@ -68,19 +68,66 @@ public class ModBopTools
     @Config(modid=MODID, type = Config.Type.INSTANCE, name = MODID)
     public static class CONFIG_TOOLS {
 
-        @Config.Name("Amber")
-        @Config.Comment("Settings for the Amber Tools/Armor")
-        public static EquipmentConfig amber = new EquipmentConfig("amber");
+        public static EquipmentConfig amber = new EquipmentConfig();
+        public static EquipmentConfig malachite = new EquipmentConfig();
+        public static EquipmentConfig peridot = new EquipmentConfig();
+        public static EquipmentConfig ruby = new EquipmentConfig();
+        public static EquipmentConfig sapphire = new EquipmentConfig();
+        public static EquipmentConfig tanzanite = new EquipmentConfig();
+        public static EquipmentConfig topaz = new EquipmentConfig();
 
         public static class EquipmentConfig {
-            private String name;
-            private String locName;
 
-            EquipmentConfig(String name, String locName) {
-                this.name = name;
-                this.locName = locName
+            public ToolsSettings tools = new ToolsSettings();
+            public ArmorSettings armor = new ArmorSettings();
+
+            public static class ToolsSettings {
+                @Config.Name("Enable Axe")
+                public boolean enableAxe = true;
+
+                @Config.Name("Enable Bow")
+                public boolean enableBow = true;
+
+                @Config.Name("Enable FishingRod")
+                public boolean enableFishingRod = true;
+
+                @Config.Name("Enable Hammer")
+                public boolean enableHammer = true;
+
+                @Config.Name("Enable Hoe")
+                public boolean enableHoe = true;
+
+                @Config.Name("Enable Pickaxe")
+                public boolean enablePickaxe = true;
+
+                @Config.Name("Enable Shears")
+                public boolean enableShears = true;
+
+                @Config.Name("Enable Shield")
+                public boolean enableShield = true;
+
+                @Config.Name("Enable Shovel")
+                public boolean enableShovel = true;
+
+                @Config.Name("Enable Sickle")
+                public boolean enableSickle = true;
+
+                @Config.Name("Enable Sword")
+                public boolean enableSword = true;
             }
-            @
+            public static class ArmorSettings {
+                @Config.Name("Enable Helmet")
+                public boolean enableHelmet = true;
+
+                @Config.Name("Enable Chestplate")
+                public boolean enableChestplate = true;
+
+                @Config.Name("Enable Leggings")
+                public boolean enableLeggings = true;
+
+                @Config.Name("Enable Boots")
+                public boolean enableBoots = true;
+            }
         }
     }
 }
