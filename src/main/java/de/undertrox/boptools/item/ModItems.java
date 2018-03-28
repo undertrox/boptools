@@ -63,6 +63,15 @@ public class ModItems {
             3.0f,
             10
     );
+    public static EquipmentGroup toolsAmber = new EquipmentGroup(
+            "amber",
+            "gemAmber",
+            2,
+            250,
+            4.5f,
+            2f,
+            20
+    );
 
     public static void register(IForgeRegistry<Item> registry) {
         toolsTopaz.register(registry);
@@ -71,6 +80,7 @@ public class ModItems {
         toolsPeridot.register(registry);
         toolsTanzanite.register(registry);
         toolsMalachite.register(registry);
+        toolsAmber.register(registry);
     }
 
     public static void registerModels() {
@@ -80,5 +90,6 @@ public class ModItems {
         toolsPeridot.registerItemModels();
         toolsTanzanite.registerItemModels();
         toolsMalachite.registerItemModels();
+        toolsAmber.registerItemModels();
     }
 }

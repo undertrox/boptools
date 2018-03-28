@@ -1,0 +1,6 @@
+{
+	"parent": "boptools:item/tool/amber/bow/bow_initial",
+	"textures": {
+		"layer0": "boptools:items/tool/amber/bow/bow_2"
+	}
+}	

@@ -1,0 +1,6 @@
+{
+	"parent":"boptools:item/tool/shield_blocking",
+	"textures": {
+		"layer0":"boptools:items/tool/amber/shield"
+	}
+}

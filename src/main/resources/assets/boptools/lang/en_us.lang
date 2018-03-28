@@ -1,4 +1,3 @@
-
 item.boptools.tool.axetopaz.name=Topaz Axe
 item.boptools.armor.bootstopaz.name=Topaz Boots
 item.boptools.tool.bowtopaz.name=Topaz Reinforced Bow
@@ -94,3 +93,19 @@ item.boptools.tool.shieldsapphire.name=Sapphire Shield
 item.boptools.tool.shovelsapphire.name=Sapphire Shovel
 item.boptools.tool.sicklesapphire.name=Sapphire Sickle
 item.boptools.tool.swordsapphire.name=Sapphire Sword
+
+item.boptools.tool.axeamber.name=Amber Axe
+item.boptools.armor.bootsamber.name=Amber Boots
+item.boptools.tool.bowamber.name=Amber Reinforced Bow
+item.boptools.armor.chestplateamber.name=Amber Chestplate
+item.boptools.tool.fishingrodamber.name=Amber Fishing Rod
+item.boptools.tool.hammeramber.name=Amber Hammer
+item.boptools.armor.helmetamber.name=Amber Helmet
+item.boptools.tool.hoeamber.name=Amber Hoe
+item.boptools.armor.leggingsamber.name=Amber Leggings
+item.boptools.tool.pickaxeamber.name=Amber Pickaxe
+item.boptools.tool.shearsamber.name=Amber Shears
+item.boptools.tool.shieldamber.name=Amber Shield
+item.boptools.tool.shovelamber.name=Amber Shovel
+item.boptools.tool.sickleamber.name=Amber Sickle
+item.boptools.tool.swordamber.name=Amber Sword
