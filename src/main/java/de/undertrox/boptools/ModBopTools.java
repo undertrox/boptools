@@ -6,8 +6,10 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.config.Config;
+import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -64,9 +66,18 @@ public class ModBopTools
         }
     }
 
-    @Config.LangKey("boptools.config.gems")
-    @Config(modid=MODID, type = Config.Type.INSTANCE, name = MODID)
+    @Mod.EventBusSubscriber(modid=MODID)
+    private static class ConfigHandler {
+        @SubscribeEvent
+        public static void onConfigChanged(final ConfigChangedEvent.OnConfigChangedEvent event) {
+            if (event.getModID().equals(MODID)) {
+                ConfigManager.sync(MODID, Config.Type.INSTANCE);
+            }
+        }
+    }
+
     public static class CONFIG_TOOLS {
+
 
         public static EquipmentConfig amber = new EquipmentConfig();
         public static EquipmentConfig malachite = new EquipmentConfig();
@@ -78,7 +89,9 @@ public class ModBopTools
 
         public static class EquipmentConfig {
 
+            @Config.RequiresMcRestart
             public ToolsSettings tools = new ToolsSettings();
+            @Config.RequiresMcRestart
             public ArmorSettings armor = new ArmorSettings();
 
             public static class ToolsSettings {
