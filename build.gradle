@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "0.0.2"
+version = "0.0.2.1"
 group = "de.undertrox.boptools" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "boptools"
 
@@ -57,7 +57,7 @@ dependencies {
     // real examples
     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
     //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
-    compile "cofh:CoFHCore:1.12.2-4.3.9.2:deobf"
+    //compile "cofh:CoFHCore:1.12.2-4.3.9.2:deobf"
     // the 'provided' configuration is for optional dependencies that exist at compile-time but might not at runtime.
     //provided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
 

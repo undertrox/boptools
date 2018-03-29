@@ -23,7 +23,7 @@ import org.apache.logging.log4j.Logger;
         modid = ModBopTools.MODID,
         name = ModBopTools.NAME,
         version = ModBopTools.VERSION,
-        dependencies = "required-after:cofhcore@[4.3.10,4.4.0);required-after:biomesoplenty@[7.0.1.2314]")
+        dependencies = "required-after:cofhcore;after:biomesoplenty")
 public class ModBopTools
 {
     public static final String MODID = "boptools";
