@@ -110,3 +110,11 @@ item.boptools.tool.shieldamber.name=Bernsteinschild
 item.boptools.tool.shovelamber.name=Bernsteinschaufel
 item.boptools.tool.sickleamber.name=Bernsteinsichel
 item.boptools.tool.swordamber.name=Bernsteinschwert
+
+material.topaz.name=Topas
+material.malachite.name=Malachit
+material.peridot.name=Peridot
+material.tanzanite.name=Tanzanit
+material.ruby.name=Rubin
+material.sapphire.name=Saphir
+material.amber.name=Bernstein

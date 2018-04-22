@@ -110,5 +110,10 @@ item.boptools.tool.shovelamber.name=Янтарная лопата
 item.boptools.tool.sickleamber.name=Янтарный серп
 item.boptools.tool.swordamber.name=Янтарный меч
 
-boptools.config.gems.amber.name = Янтарь
-boptools.config.gems.amber.tools.name = Инструменты
+material.topaz.name=Топазовый
+material.malachite.name=Малахитовый
+material.peridot.name=Перидотовый
+material.tanzanite.name=Танзанитовый
+material.ruby.name=Рубиновый
+material.sapphire.name=Сапфировый
+material.amber.name=Янтарный
