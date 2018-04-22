@@ -110,5 +110,12 @@ item.boptools.tool.shovelamber.name=Amber Shovel
 item.boptools.tool.sickleamber.name=Amber Sickle
 item.boptools.tool.swordamber.name=Amber Sword
 
-boptools.config.gems.amber.name = Amber
-boptools.config.gems.amber.tools.name = Tools
+modifier.depthdigger.name=Depthdigger
+
+material.topaz.name=Topaz
+material.malachite.name=Malachite
+material.peridot.name=Peridot
+material.tanzanite.name=Tanzanite
+material.ruby.name=Ruby
+material.sapphire.name=Sapphire
+material.amber.name=Amber

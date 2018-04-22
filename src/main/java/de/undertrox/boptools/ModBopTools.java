@@ -23,7 +23,7 @@ import org.apache.logging.log4j.Logger;
         modid = ModBopTools.MODID,
         name = ModBopTools.NAME,
         version = ModBopTools.VERSION,
-        dependencies = "required-after:cofhcore;after:biomesoplenty")
+        dependencies = "required-after:cofhcore;after:biomesoplenty;before:tconstruct")
 public class ModBopTools
 {
     public static final String MODID = "boptools";
@@ -33,7 +33,7 @@ public class ModBopTools
     @SidedProxy(serverSide = "de.undertrox.boptools.proxy.CommonProxy", clientSide = "de.undertrox.boptools.proxy.ClientProxy")
     public static CommonProxy proxy;
 
-    private static Logger logger;
+    public static Logger logger;
 
 
 
@@ -41,6 +41,7 @@ public class ModBopTools
     public void preInit(FMLPreInitializationEvent event)
     {
         logger = event.getModLog();
+        proxy.preInit();
     }
 
     @EventHandler
