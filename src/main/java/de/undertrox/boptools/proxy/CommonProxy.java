@@ -24,6 +24,8 @@ public class CommonProxy {
                 ModBopTools.logger.warn("Loading of Tinkers Construct integration failed:");
                 e.printStackTrace();
             }
+        } else {
+            ModBopTools.logger.info("Tinkers Construct is not installed, not loading Tinkers Construct integration");
         }
     }
 }

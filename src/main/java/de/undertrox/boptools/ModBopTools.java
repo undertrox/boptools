@@ -23,12 +23,14 @@ import org.apache.logging.log4j.Logger;
         modid = ModBopTools.MODID,
         name = ModBopTools.NAME,
         version = ModBopTools.VERSION,
-        dependencies = "required-after:cofhcore;after:biomesoplenty;before:tconstruct")
+        dependencies = "required-after:cofhcore;after:biomesoplenty;before:tconstruct",
+        acceptedMinecraftVersions = "[1.12,1.12.2]"
+)
 public class ModBopTools
 {
     public static final String MODID = "boptools";
     public static final String NAME = "Biomes o Plenty Tools Mod";
-    public static final String VERSION = "0.0.2";
+    public static final String VERSION = "0.0.3";
 
     @SidedProxy(serverSide = "de.undertrox.boptools.proxy.CommonProxy", clientSide = "de.undertrox.boptools.proxy.ClientProxy")
     public static CommonProxy proxy;
@@ -47,7 +49,7 @@ public class ModBopTools
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        logger.info("BopTools in Init");
+
     }
 
     @EventHandler
@@ -59,11 +61,15 @@ public class ModBopTools
     public static class RegistrationHandler {
         @SubscribeEvent
         public static void registerItems(RegistryEvent.Register<Item> event) {
+            logger.debug("Registering Items");
             ModItems.register(event.getRegistry());
+            logger.debug("Finished Registering Items");
         }
         @SubscribeEvent
         public static void registerItems(ModelRegistryEvent event) {
+            logger.debug("Registering Item Models");
             ModItems.registerModels();
+            logger.debug("Finished Registering Item Models");
         }
     }
 
