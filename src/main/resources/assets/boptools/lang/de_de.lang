@@ -1,4 +1,3 @@
-
 item.boptools.tool.axetopaz.name=Topasaxt
 item.boptools.armor.bootstopaz.name=Topasstiefel
 item.boptools.tool.bowtopaz.name=Topasverstärkter Bogen
@@ -110,6 +109,8 @@ item.boptools.tool.shieldamber.name=Bernsteinschild
 item.boptools.tool.shovelamber.name=Bernsteinschaufel
 item.boptools.tool.sickleamber.name=Bernsteinsichel
 item.boptools.tool.swordamber.name=Bernsteinschwert
+
+modifier.depthdigger.name=Tiefengräber
 
 material.topaz.name=Topas
 material.malachite.name=Malachit
